@@ -6,9 +6,10 @@ import MenuItem from "./MenuItem";
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
-  }, [isOpen]);
+  }, []);
 
   return (
     <div className="relative">
@@ -34,7 +35,8 @@ const UserMenu = () => {
         <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
           <div className="flex flex-col cursor-pointer">
             <>
-              <MenuItem />
+              <MenuItem onClick={()=>{}} label="Login"/>
+              <MenuItem onClick={()=>{}} label="Sign up"/>
             </>
           </div>
         </div>
