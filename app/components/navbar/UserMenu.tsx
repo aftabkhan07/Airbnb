@@ -8,6 +8,7 @@ const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
+    // console.log("refre")
     setIsOpen((value) => !value);
   }, []);
 
